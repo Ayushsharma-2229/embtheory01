@@ -822,14 +822,7 @@
 .promobox--style-2 .promobox__bg, .promobox--style-2 .promobox__plate .promobox__content::before{
     background-color:#fff;
 }
-@media screen and (max-width:786px){
-    .slick-slide img {
-    display: block;
-    width: 100%;
-    height: 250px;
-}
 
-}
 
 
 .slider-offer-images{
@@ -842,6 +835,22 @@
 .carousel-inner .item img{
     width: 100%;
     height: 430px!important;
+}
+
+@media screen and (max-width:786px){
+    .carousel-inner .item img{
+        height:230px!important;
+    }
+
+    .slick-slide img {
+    display: block;
+    width: 100%;
+    height: 250px;
+}
+.slider-offer-images{
+    height: auto;
+}
+
 }
     </style>
 
@@ -925,7 +934,7 @@ padding-top: 50px;
 ">
     <div class="container">
         <div class="row">
-            <div class="col-md-2">
+            <div class="col-md-2 col-6">
                 <div class="catagori">
                     <a href="#">
                     <img src="products/flower-vase/flower-vase-2599.jpeg" class="shop-by-cat">
@@ -934,7 +943,7 @@ padding-top: 50px;
                 </div>
             </div>
 
-            <div class="col-md-2">
+            <div class="col-md-2 col-6">
                 <div class="catagori">
                     <a href="#">
                     <img src="products/flower-vase/flower-vase-2599.jpeg" class="shop-by-cat">
@@ -943,7 +952,7 @@ padding-top: 50px;
                 </div>
             </div>
 
-            <div class="col-md-2">
+            <div class="col-md-2 col-6">
                 <div class="catagori">
                     <a href="#">
                     <img src="products/flower-vase/flower-vase-2599.jpeg" class="shop-by-cat">
@@ -952,7 +961,7 @@ padding-top: 50px;
                 </div>
             </div>
 
-            <div class="col-md-2">
+            <div class="col-md-2 col-6">
                 <div class="catagori">
                     <a href="#">
                     <img src="products/flower-vase/flower-vase-2599.jpeg" class="shop-by-cat">
@@ -961,7 +970,7 @@ padding-top: 50px;
                 </div>
             </div>
 
-            <div class="col-md-2">
+            <div class="col-md-2 col-6">
                 <div class="catagori">
                     <a href="#">
                     <img src="products/flower-vase/flower-vase-2599.jpeg" class="shop-by-cat">
@@ -970,7 +979,7 @@ padding-top: 50px;
                 </div>
             </div>
 
-            <div class="col-md-2">
+            <div class="col-md-2 col-6">
                 <div class="catagori">
                     <a href="#">
                     <img src="products/flower-vase/flower-vase-2599.jpeg" class="shop-by-cat">
@@ -1074,17 +1083,22 @@ padding-top: 50px;
             }
 
             @media screen and (max-width:786px){
+                .card-product .product-rates{
+                    font-size: 12px;
+                }
                 .card-product img {
     width: 100%;
     height: 200px;
 }
 .card-product .heading-name {
-    font-size: 14px;
-    font-family: initial;
+    font-size: 11px;
     color: #000;
-    padding: 5px 0 8px 0;}
+    padding: 5px 0 5px 0;
+    overflow: hidden;
+    font-family: system-ui;
+}
     .card-product .order-now-btn {
-    padding: 8px 20px;
+    padding: 8px 47px;
     font-size: 15px;}
     .heading-main-product {
     font-family: cursive;
@@ -1093,7 +1107,11 @@ padding-top: 50px;
     text-align: center;
     margin-bottom: 10px;
     padding-bottom: 30px;
-            }}
+            }
+            .image-products{
+                height: 190px;
+            }
+            }
 
             </style>
 <section>
@@ -1326,23 +1344,35 @@ padding-top: 50px;
         padding-bottom: 25px;
         padding-top:25px;
     }
+
+.video-sshs{
+    width: 100%;height: 550px;}
+
+@media screen and (max-width:786px){
+    
+.video-sshs{
+    width: 100%;height:auto;}
+    .offer-images{
+        height: 190px;
+    }
+}
 </style>
 
 
 <section class="offer-aaas">
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-3">
+            <div class="col-md-3 col-6">
                 
-<video src="video/20231225_2323281.mp4" autoplay="true" style="width: 100%;height: 550px;"></video>
+<video src="video/20231225_2323281.mp4" autoplay="true" class="video-sshs"></video>
             </div>
 
-            <div class="col-md-3">
+            <div class="col-md-3 col-6">
                 
-                <video src="video/20231225_2323281.mp4" autoplay="true" style="width: 100%;height: 550px;"></video>
+                <video src="video/20231225_2323281.mp4" autoplay="true" class="video-sshs"></video>
                             </div>
 
-            <div class="col-md-3">
+            <div class="col-md-3 col-6">
                 <div class="col-md-12">
 <img src="img/poster.jpg" alt="" class="offer-images">
                 </div>
@@ -1350,7 +1380,7 @@ padding-top: 50px;
                     <img src="img/poster.jpg" alt="" class="offer-images">
                 </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 col-6">
                 <div class="col-md-12">
                     <img src="img/poster.jpg" alt="" class="offer-images">
 
@@ -1573,6 +1603,7 @@ padding-top: 50px;
     .feal-of-the-day{
  width: 100%;
     border-radius:10px;
+    margin-bottom: 25px;
     }
 </style>
 
