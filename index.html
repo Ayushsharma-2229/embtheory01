@@ -545,14 +545,19 @@
       id="rang-de-decor-handmade-beautiful-design-home-decor-arts-wall-clock" class="template-index theme-css-animate"
   ><div id="shopify-section-header" class="shopify-section">
   <style>
+      .header--style-4 .header__line--colorize-2{    background-color: #00415d;}
+      .header--style-4 .menu:not(.menu--vertical) .menu__panel>.menu__item>a .icon {
+    fill: #ffffff;
+}
       .header--style-4 .menu:not(.menu--vertical) .menu__panel>.menu__item>a, .header--style-4 .menu:not(.menu--vertical) .menu__panel>.menu__item>a:active, .header--style-4 .menu:not(.menu--vertical) .menu__panel>.menu__item>a:link, .header--style-4 .menu:not(.menu--vertical) .menu__panel>.menu__item>a:visited {
         
-    color: #00425d;
+    color: #fff;
     font-weight: 600;
-    font-family: math;
-    font-size: 14px;
-    padding: 15px;
+    font-family: sans-serif;
+    font-size: 15px;
+    padding: 11px;
     text-decoration: none;
+    letter-spacing: unset;
 }
 .menu__list--styled .menu__item>a, .menu__list--styled .menu__item>a:active, .menu__list--styled .menu__item>a:link, .menu__list--styled .menu__item>a:visited {
     color: #00415c;
@@ -571,6 +576,10 @@
     z-index: 999;
     left: 1%;
 }
+.header--style-4 .menu:not(.menu--vertical) .menu__panel>.menu__item:hover>a, .header--style-4 .menu:not(.menu--vertical) .menu__panel>.menu__item:hover>a:active, .header--style-4 .menu:not(.menu--vertical) .menu__panel>.menu__item:hover>a:link, .header--style-4 .menu:not(.menu--vertical) .menu__panel>.menu__item:hover>a:visited
+{
+    color: #ffd22e;
+}
 .whatsapp-button a {
     background-color: #00b700;
     font-size: 34px;
@@ -580,6 +589,9 @@
 }
 .whatsapp-button a i {
     color:#fff;
+}
+.menu__list--styled{
+    padding: 6px 15px!important;
 }
   </style>
 
@@ -781,6 +793,35 @@
         .rimage__img.lazyload:not(.loaded):not(.donothide) {
     opacity: 1.001;
 }
+.slick-slide img {
+    display: block;
+    width: 100%;
+    height:500px;
+}
+.promobox p {
+    font-family: inherit;
+    display: block;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top:0px;
+}
+.promobox p:hover{
+    text-decoration: none;
+}
+#shopify-section-1586280453180 .promobox.promobox--type-4.promobox--style-2.image-animation-trigger.position-relative.text-center {
+
+    border-radius: 50%;
+    border: 0px solid grey;
+    box-shadow: 0px 0px 1px #000;
+    overflow: hidden;
+}
+.promobox__content-scale::before {
+    border-radius: 50%;
+}
+.promobox--style-2 .promobox__bg, .promobox--style-2 .promobox__plate .promobox__content::before{
+    background-color:#fff;
+}
 @media screen and (max-width:786px){
     .slick-slide img {
     display: block;
@@ -788,6 +829,19 @@
     height: 250px;
 }
 
+}
+
+
+.slider-offer-images{
+    width: 100%;
+    height: 200px;
+    margin-bottom: 10px;
+    margin-top: 8px;
+    border-radius: 4px;
+}
+.carousel-inner .item img{
+    width: 100%;
+    height: 430px!important;
 }
     </style>
 
@@ -799,40 +853,50 @@
 
 <!--slider end-->
     
-
-  <div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-    </ol>
-
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner">
-      <div class="item active">
-        <img src="img/slider-001.jpg" alt="Los Angeles" style="width:100%;">
-      </div>
-
-      <div class="item">
-        <img src="img/slider-002.jpg" alt="Chicago" style="width:100%;">
-      </div>
-    
-      <div class="item">
-        <img src="img/slider-003.jpg" alt="New york" style="width:100%;">
-      </div>
+<div class="container-fluid" style="padding-top:10px;padding-bottom: 10px;">
+    <div class="row">
+        <div class="col-md-8">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                
+            
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                  <div class="item active">
+                    <img src="img/slider-001.jpg" alt="Los Angeles" style="width:100%;">
+                  </div>
+            
+                  <div class="item">
+                    <img src="img/slider-002.jpg" alt="Chicago" style="width:100%;">
+                  </div>
+                
+                  <div class="item">
+                    <img src="img/slider-003.jpg" alt="New york" style="width:100%;">
+                  </div>
+                </div>
+            
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                  <span class="glyphicon glyphicon-chevron-left"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                  <span class="glyphicon glyphicon-chevron-right"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+        </div>
+        <div class="col-md-4" style="padding:0px;">
+            <div class="col-md-12">
+<img src="img/offer-2.jpg" class="slider-offer-images">
+            </div>
+            <div class="col-md-12">
+                <img src="img/offer-2.jpg" alt="" class="slider-offer-images">
+                            </div>
+        </div>
     </div>
-
-    <!-- Left and right controls -->
-    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>
+</div>
+  
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
@@ -840,181 +904,128 @@
 
 <!--home elegnce-->
 
-  <div id="shopify-section-1586280453180" class="shopify-section">
-  
-  <div>
-      <div data-section-id="1586280453180" data-section-type="home-builder" class="container"
-   style="padding-top: 25px;">
-          
-  <div class="home-builder overflow-hidden">
-      <h4 class="home-section-title mb-30 text-center">Add Elegance To Your Home</h4><div class="row align-items-start justify-content-center">
-  
-  <div class="home-builder-block-id-1586280453180-1 col-6 col-md-6 col-lg-3 mb-30 mb-sm-30 "><!-- snippets/promobox.liquid -->
-  
-  <div class="promobox promobox--type-4 promobox--style-2 image-animation-trigger position-relative text-center">
-         
-    <a class="d-block" href="flower-vase.html">
-              
-  <div class="image-animation image-animation--from-none image-animation--to-center"><div class="rimage"
-       style="padding-top:100.0%; min-height: 0px;">
-       <img class="rimage__img rimage__img--cover lazyload" loading="eager"
-              data-aspect-ratio="1.0"data-aspect-ratio-original="1.0"data-stretch-size="cover"
-               src="img/img (11).jpg" data-srcset="img/img (11).jpg"data-scale-perspective="1.1"
-           alt=""></div>
-  </div>
-          </a>
+<style>
+    .catagori{
+    text-align: center;
+    color: #7e7777;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: system-ui;
+}
+    .shop-by-cat {
+    width:200px;
+    height: 200px;
+    border-radius: 4px;
+    margin-bottom: 5px;
+}
+</style>
+<section style="
+padding-bottom: 35px;
+padding-top: 50px;
+">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2">
+                <div class="catagori">
+                    <a href="#">
+                    <img src="products/flower-vase/flower-vase-2599.jpeg" class="shop-by-cat">
+                    <p>Flower Wase</p>
+                </a>
+                </div>
+            </div>
 
-          <div class="promobox__plate promobox__plate--hovered position-absolute d-flex flex-column flex-center px-10 py-7 pointer-events-none">
-              <div class="promobox__content absolute-stretch d-flex flex-center"><a href="#" class="pointer-events-all">
-                          <p class="promobox__text-1 h5 position-relative">Flower Vase</p>
-                      </a></div>
-          </div>
-          <div class="promobox__content-scale position-absolute d-none d-lg-flex flex-column flex-center px-15 py-7 pointer-events-none">
-              
-  <a href="flower-vase.html" class="pointer-events-all">
-                          <p class="promobox__text-1 h5 position-relative">Flower Vase</p>
-                      </a>
-          </div>
-      </div>
-  </div>
-  
-  <div class="home-builder-block-id-1586280453180-2 col-6 col-md-6 col-lg-3 mb-30 mb-sm-30 "><!-- snippets/promobox.liquid -->
-  
-  
-  
-  <div class="promobox promobox--type-4 promobox--style-2 image-animation-trigger position-relative text-center">
-          <a href="leaf-product.html" class="d-block">
-              
-  <div class="image-animation image-animation--from-none image-animation--to-center"><div class="rimage"
-       style="padding-top:100.0%; min-height: 0px;"><img class="rimage__img rimage__img--cover lazyload" loading="eager"
-              data-aspect-ratio="1.0" data-aspect-ratio-original="1.0"
-                data-stretch-size="cover"
-               src="products/wings/modern-style-leaf-hd-al-2799.jpg" data-srcset="img/img (3).jpg"
-           
-           
-           data-scale-perspective="1.1"
-           
-           
-           alt=""></div>
-  </div>
-          </a>
-          <div class="promobox__plate promobox__plate--hovered position-absolute d-flex flex-column flex-center px-10 py-7 pointer-events-none">
-              <div class="promobox__content absolute-stretch d-flex flex-center">
-                  <a href="leaf-product.html" class="pointer-events-all">
-                          <p class="promobox__text-1 h5 position-relative">Modern Style Leaf</p>
-                      </a></div>
-          </div>
-          <div class="promobox__content-scale position-absolute d-none d-lg-flex flex-column flex-center px-15 py-7 pointer-events-none">
-              
-  <a href="#" class="pointer-events-all">
-                          <p class="promobox__text-1 h5 position-relative">Modern Style Leaf</p>
-                      </a>
-          </div>
-      </div>
-  </div>
+            <div class="col-md-2">
+                <div class="catagori">
+                    <a href="#">
+                    <img src="products/flower-vase/flower-vase-2599.jpeg" class="shop-by-cat">
+                    <p>Flower Wase</p>
+                </a>
+                </div>
+            </div>
 
-  <div class="home-builder-block-id-1586280453180-3 col-6 col-md-6 col-lg-3 mb-30 mb-sm-30 "><!-- snippets/promobox.liquid -->
-  
-  
-  
-  <div class="promobox promobox--type-4 promobox--style-2 position-relative text-center">
-          <a href="urli.html" class="d-block">
-              
-  <div class="image-animation "><div class="rimage"
-       style="padding-top:100.0%; min-height: 0px;"><img class="rimage__img rimage__img--cover lazyload" loading="eager"
-              data-aspect-ratio="1.0"data-aspect-ratio-original="1.0"
-                  data-stretch-size="cover"
-               src="products/urli/peacock-urli-3-1899.png" data-srcset="img/img (6).jpg"></div>
-  </div>
-          </a>
-          <div class="promobox__plate promobox__plate--hovered position-absolute d-flex flex-column flex-center px-10 py-7 pointer-events-none">
-              <div class="promobox__content absolute-stretch d-flex flex-center"><a href="#" class="pointer-events-all">
-                          <p class="promobox__text-1 h5 position-relative">Urli</p>
-                      </a></div>
-          </div>
-          <div class="promobox__content-scale position-absolute d-none d-lg-flex flex-column flex-center px-15 py-7 pointer-events-none">
-              
-  <a href="urli.html" class="pointer-events-all">
-                          <p class="promobox__text-1 h5 position-relative">Urli</p>
-                      </a>
-          </div>
-      </div>
-  </div>
+            <div class="col-md-2">
+                <div class="catagori">
+                    <a href="#">
+                    <img src="products/flower-vase/flower-vase-2599.jpeg" class="shop-by-cat">
+                    <p>Flower Wase</p>
+                </a>
+                </div>
+            </div>
 
-  <div class="home-builder-block-id-1586280453180-4 col-6 col-md-6 col-lg-3 mb-30 mb-sm-30 "><!-- snippets/promobox.liquid -->
-  
-  
-  
-  <div class="promobox promobox--type-4 promobox--style-2 image-animation-trigger position-relative text-center">
-          <a href="latest-productus.html" class="d-block">
-              
-  <div class="image-animation image-animation--from-none image-animation--to-center"><div class="rimage"
-       style="padding-top:100.0%; min-height: 0px;"><img class="rimage__img rimage__img--cover lazyload" loading="eager"
-          data-aspect-ratio="1.0" data-aspect-ratio-original="1.0"
-                  data-stretch-size="cover"
-               src="products/modern/peacock-platter-1800.jpg" data-srcset="img/img (8).jpg"data-scale-perspective="1.1"
-           alt=""></div>
-  </div>
-          </a>
-          <div class="promobox__plate promobox__plate--hovered position-absolute d-flex flex-column flex-center px-10 py-7 pointer-events-none">
-              <div class="promobox__content absolute-stretch d-flex flex-center"><a href="#" class="pointer-events-all">
-                          <p class="promobox__text-1 h5 position-relative">Platter</p>
-                      </a></div>
-          </div>
-          <div class="promobox__content-scale position-absolute d-none d-lg-flex flex-column flex-center px-15 py-7 pointer-events-none">
-              
-  <a href="latest-productus.html" class="pointer-events-all">
-                          <p class="promobox__text-1 h5 position-relative">Platter</p>
-                      </a>
-          </div>
-      </div>
-  </div>
+            <div class="col-md-2">
+                <div class="catagori">
+                    <a href="#">
+                    <img src="products/flower-vase/flower-vase-2599.jpeg" class="shop-by-cat">
+                    <p>Flower Wase</p>
+                </a>
+                </div>
+            </div>
 
-</div>
-      </div>
-  
-      </div>
-  </div></div>
-  
+            <div class="col-md-2">
+                <div class="catagori">
+                    <a href="#">
+                    <img src="products/flower-vase/flower-vase-2599.jpeg" class="shop-by-cat">
+                    <p>Flower Wase</p>
+                </a>
+                </div>
+            </div>
+
+            <div class="col-md-2">
+                <div class="catagori">
+                    <a href="#">
+                    <img src="products/flower-vase/flower-vase-2599.jpeg" class="shop-by-cat">
+                    <p>Flower Wase</p>
+                </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
   
 <!--Ens home elegnce-->
 
 <!--our product blog-->
 <style>
-    #shopify-section-1586280453180 .home-section-title:not(.home-section-title--multiple) {
-    font-family: cursive;
-    color: #e79227;
+    #shopify-section-1586280453180 .home-section-title:not(.home-section-title--multiple)  {
+    font-family: ui-sans-serif;
+    color: #000000;
 }
      .card-product{
-                padding: 0 0 20px 0;
-                text-align: center;
-                border-bottom: 2px solid grey;
-                border-radius: 5px;
-                margin-bottom: 15px;
-    box-shadow: 0 0 3px #e79227;
+    overflow: hidden;
+    padding: 0 0 5px 0;
+    /* text-align: center; */
+    border-radius: 5px;
+    margin-bottom: 15px;
     margin-top: 5px;
-     }
-           .card-product img{
-                width: 100%;    border-bottom: 1px solid #fcf3e8;
-                height:250px;
-                border-radius: 5px 5px 0 0;
+    box-shadow: 0 0 5px #fff5f5;
+}
+     .card-product:hover img{ transform: scale(1.1);}
+           .card-product  img{overflow: hidden;
+                width: 100%;  height: 100%;
+                transition: all .60s ease;
             }
+            .image-products{ border-bottom: 1px solid #fcf3e8;
+                height:330px;
+                border-radius:5px;overflow: hidden;
+                transition: all .60s ease;}
             .card-product .heading-name{
-                font-size:20px;
-                font-family: initial;
-                color: #000;
-                padding: 6px 0 8px 0;
-                margin: 0;
-                line-height: initial;
-            }
+    font-size: 17px;
+    font-family: initial;
+    color: #2a2a2a;
+    padding: 3px 0;
+    margin: 0;
+    line-height: initial;
+    max-height: 45px;
+}
             .card-product .product-rates{
-                font-size: 19px;
-                padding: 0px 0;
-                margin-bottom: 10px;
-                font-family: emoji;
-                color: #000;
-            }
-
+    font-size: 14px;
+    padding: 0px;
+    margin-bottom: 3px;
+    font-family: unset;
+    color: #060606;
+    font-weight: 600;
+}
             .card-product .product-rates span{
                 font-size: 16px;
                 text-decoration: line-through;
@@ -1022,38 +1033,44 @@
                 font-family: fangsong;
             }
             .card-product .order-now-btn{
-                padding: 5px 21px;
+    padding: 7px 38%;
     font-size: 17px;
-    background-color: #e79227;
-    color: #fff;
-    font-family: initial;
+    font-family: -webkit-body;
     font-weight: 500;
-    box-shadow: 3px 3px 0 0 #593d42;
     border-radius: 2px;
-            }
-            .card-product .order-now-btn:hover {
-    background-color:#00415d;
-    box-shadow: 3px 3px 0 0 #e79227;
 }
+            .card-product .order-now-btn:hover{
+                color:#000;
+                
+            }
+           
 
             .heading-main-product{
-    font-family: cursive;
-    font-size: 27px;
-    color: #e79227;
+    /* font-family: unset; */
+    font-size: 25px;
+    color: #9d6a37;
     text-align: center;
     margin-bottom: 10px;
-    padding-bottom: 40px;
+    padding-bottom: 25px;
     font-weight: 600;
+    margin-top: 10px;
 }
 .view-moew-btn{
-                font-family: initial;
-                font-size: 19px;
-                padding:5px 16px;
-                margin-top: 25px;
-                background-color: #e79227;
-                color: #fff!important;
-                border-radius: 4px;
-                text-decoration: none;
+    border: 2px solid grey;
+    font-family: unset;
+    font-size: 15px;
+    padding: 10px 30px;
+    margin-top: 25px;
+    background-color: #ffffff;
+    color: #242424!important;
+    border-radius: 15px;
+    text-decoration: none;
+    margin-bottom: 15px;
+}
+.view-moew-btn i{
+                font-weight: 100;
+                font-size: 12px;
+                color: #494950;
             }
 
             @media screen and (max-width:786px){
@@ -1080,7 +1097,7 @@
 
             </style>
 <section>
-    <div class="container" style="padding-top:25px;padding-bottom:40px;">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-md-12">
                 <h2 class="heading-main-product">Handmade Urli's</h2>
@@ -1089,7 +1106,8 @@
 
             <div class="col-md-3 col-6">
                 <div class="card-product">
-                <img src="products/urli/flower-shape-urli-3-set-1799.jpg" alt="" class="src">
+                    <div class="image-products">
+                <img src="products/urli/flower-shape-urli-3-set-1799.jpg" alt="" class="src"></div>
                 <p class="heading-name">Flower Shape Urli,Set of 3</h4>
                 <p class="product-rates"><span>1799.00</span> From Rs. 1260.00</p>
                 <a class="order-now-btn" href="https://wa.me/9997502801" target="_blank">Order Now</a>
@@ -1098,8 +1116,9 @@
 
             <div class="col-md-3 col-6">
                 <div class="card-product">
-                <img src="products/urli/gold-metal-detachable-sunflower-urli-3set-1299.jpg" alt="" class="src">
-                <p class="heading-name">Gold Metal Detachable Sunflower Urli, Set of 3</h4>
+                    <div class="image-products">
+                <img src="products/urli/gold-metal-detachable-sunflower-urli-3set-1299.jpg" alt="" class="src"></div>
+                <p class="heading-name">Gold Metal Detachable Sunflower Urli</h4>
                 <p class="product-rates"><span>1299.00</span> From Rs. 910.00</p>
                 <a class="order-now-btn" href="https://wa.me/9997502801" target="_blank">Order Now</a>
             </div>
@@ -1107,7 +1126,8 @@
 
             <div class="col-md-3 col-6">
                 <div class="card-product">
-                <img src="products/urli/gold-metal-diya-tealight-urli-2399.jpg" alt="" class="src">
+                    <div class="image-products">
+                <img src="products/urli/gold-metal-diya-tealight-urli-2399.jpg" alt="" class="src"></div>
                 <p class="heading-name">Gold Metal Diya Tealight Urli, Set of 3</h4>
                 <p class="product-rates"><span>2399.00</span> From Rs. 1680.00</p>
                 <a class="order-now-btn" href="https://wa.me/9997502801" target="_blank">Order Now</a>
@@ -1116,7 +1136,8 @@
 
             <div class="col-md-3 col-6">
                 <div class="card-product">
-                <img src="products/urli/gold-white-urli-699.jpg" alt="" class="src">
+                    <div class="image-products">
+                <img src="products/urli/gold-white-urli-699.jpg" alt="" class="src"></div>
                 <p class="heading-name">Gold White Urli</h4>
                 <p class="product-rates"><span>699.00</span> From Rs. 490.00</p>
                 <a class="order-now-btn" href="https://wa.me/9997502801" target="_blank">Order Now</a>
@@ -1126,7 +1147,8 @@
 
             <div class="col-md-3 col-6">
                 <div class="card-product">
-                <img src="products/urli/hanging-rose-urli-set-2-1899.png" alt="" class="src">
+                    <div class="image-products">
+                <img src="products/urli/hanging-rose-urli-set-2-1899.png" alt="" class="src"></div>
                 <p class="heading-name">Hanging Rose Urli,Set of 2</h4>
                 <p class="product-rates"><span>1899.00</span> From Rs. 1329.00</p>
                 <a class="order-now-btn" href="https://wa.me/9997502801" target="_blank">Order Now</a>
@@ -1135,7 +1157,8 @@
 
             <div class="col-md-3 col-6">
                 <div class="card-product">
-                <img src="products/urli/hangingdiya-urli-1799.jpg" alt="" class="src">
+                    <div class="image-products">
+                <img src="products/urli/hangingdiya-urli-1799.jpg" alt="" class="src"></div>
                 <p class="heading-name">Hanging Diya urli</h4>
                 <p class="product-rates"><span>1799.00</span> From Rs. 1260.00</p>
                 <a class="order-now-btn" href="https://wa.me/9997502801" target="_blank">Order Now</a>
@@ -1144,7 +1167,8 @@
 
             <div class="col-md-3 col-6">
                 <div class="card-product">
-                <img src="products/urli/metal-diya-urli-lotus-699.png" alt="" class="src">
+                    <div class="image-products">
+                <img src="products/urli/metal-diya-urli-lotus-699.png" alt="" class="src"></div>
                 <p class="heading-name">Metal Diya Lotus Urli</h4>
                 <p class="product-rates"><span>699.00</span> From Rs. 490.00</p>
                 <a class="order-now-btn" href="https://wa.me/9997502801" target="_blank">Order Now</a>
@@ -1153,17 +1177,18 @@
 
             <div class="col-md-3 col-6">
                 <div class="card-product">
-                <img src="products/urli/peacock-urli-3-1899.png" alt="" class="src">
+                    <div class="image-products">
+                <img src="products/urli/peacock-urli-3-1899.png" alt="" class="src"></div>
                 <p class="heading-name">Peacock Urli, Set of 3</h4>
                 <p class="product-rates"><span>1899.00</span> From Rs. 1329.00</p>
                 <a class="order-now-btn" href="https://wa.me/9997502801" target="_blank">Order Now</a>
             </div>
             </div>
            
-
+           
           <div class="col-md-12">
             <p style="text-align:center;">
-                <a href="urli.html" class="view-moew-btn">View More</a>
+                <a href="urli.html" class="view-moew-btn">View More  <i class="fa fa-arrow-right"></i></a>
             </p>
           </div>
 
@@ -1179,7 +1204,7 @@
 
 <!--urli-->
 <section>
-    <div class="container" style="padding-top:25px;padding-bottom:40px;">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-md-12">
                 <h2 class="heading-main-product">Flower Vase</h2>
@@ -1188,7 +1213,9 @@
 
             <div class="col-md-3 col-6">
                 <div class="card-product">
+                    <div class="image-products">
                 <img src="products/flower-vase/flower-vase-2199.jpeg" alt="" class="src">
+                    </div>
                 <p class="heading-name">Flower Vase</h4>
                 <p class="product-rates"><span>2199.00</span> From Rs. 1540.00</p>
                 <a class="order-now-btn" href="https://wa.me/9997502801" target="_blank">Order Now</a>
@@ -1196,8 +1223,8 @@
             </div>
 
             <div class="col-md-3 col-6">
-                <div class="card-product">
-                <img src="products/flower-vase/flower-vase-2499.jpeg" alt="" class="src">
+                <div class="card-product"> <div class="image-products">
+                <img src="products/flower-vase/flower-vase-2499.jpeg" alt="" class="src"></div>
                 <p class="heading-name">Flower Vase</h4>
                 <p class="product-rates"><span>2499.00</span> From Rs. 1750.00</p>
                 <a class="order-now-btn" href="https://wa.me/9997502801" target="_blank">Order Now</a>
@@ -1206,7 +1233,8 @@
 
             <div class="col-md-3 col-6">
                 <div class="card-product">
-                <img src="products/flower-vase/flower-vase-2599.jpeg" alt="" class="src">
+                    <div class="image-products">
+                <img src="products/flower-vase/flower-vase-2599.jpeg" alt="" class="src"></div>
                 <p class="heading-name">Flower Vase</h4>
                 <p class="product-rates"><span>2599.00</span> From Rs. 1820.00</p>
                 <a class="order-now-btn" href="https://wa.me/9997502801" target="_blank">Order Now</a>
@@ -1215,7 +1243,8 @@
 
             <div class="col-md-3 col-6">
                 <div class="card-product">
-                <img src="products/flower-vase/flower-vase-2set-aluminium-2299.jpeg" alt="" class="src">
+                    <div class="image-products">
+                <img src="products/flower-vase/flower-vase-2set-aluminium-2299.jpeg" alt="" class="src"></div>
                 <p class="heading-name">Flower Vase Aluminium,Set of 2</h4>
                 <p class="product-rates"><span>2299.00</span> From Rs. 1520.00</p>
                 <a class="order-now-btn" href="https://wa.me/9997502801" target="_blank">Order Now</a>
@@ -1225,7 +1254,8 @@
 
             <div class="col-md-3 col-6">
                 <div class="card-product">
-                <img src="products/flower-vase/flower-vase-3499.jpeg" alt="" class="src">
+                    <div class="image-products">
+                <img src="products/flower-vase/flower-vase-3499.jpeg" alt="" class="src"></div>
                 <p class="heading-name">Flower Vase</h4>
                 <p class="product-rates"><span>3499.00</span> From Rs. 2450.00</p>
                 <a class="order-now-btn" href="https://wa.me/9997502801" target="_blank">Order Now</a>
@@ -1233,8 +1263,8 @@
             </div>
 
             <div class="col-md-3 col-6">
-                <div class="card-product">
-                <img src="products/flower-vase/flower-vase-aluminium-2399-1.jpeg" alt="" class="src">
+                <div class="card-product"> <div class="image-products">
+                <img src="products/flower-vase/flower-vase-aluminium-2399-1.jpeg" alt="" class="src"></div>
                 <p class="heading-name">Flower Vase Aluminium</h4>
                 <p class="product-rates"><span>2399.00</span> From Rs.1680.00</p>
                 <a class="order-now-btn" href="https://wa.me/9997502801" target="_blank">Order Now</a>
@@ -1243,7 +1273,8 @@
 
             <div class="col-md-3 col-6">
                 <div class="card-product">
-                <img src="products/flower-vase/flower-vase-aluminium-2399.jpeg" alt="" class="src">
+                    <div class="image-products">
+                <img src="products/flower-vase/flower-vase-aluminium-2399.jpeg" alt="" class="src"></div>
                 <p class="heading-name">Flower Vase Aluminium</h4>
                 <p class="product-rates"><span>2399.00</span> From Rs. 1680.00</p>
                 <a class="order-now-btn" href="https://wa.me/9997502801" target="_blank">Order Now</a>
@@ -1252,7 +1283,8 @@
 
             <div class="col-md-3 col-6">
                 <div class="card-product">
-                <img src="products/flower-vase/flower-vase-aluminium-2500.jpeg" alt="" class="src">
+                    <div class="image-products">
+                <img src="products/flower-vase/flower-vase-aluminium-2500.jpeg" alt="" class="src"></div>
                 <p class="heading-name">Flower Vase Aluminium</h4>
                 <p class="product-rates"><span>2500.00</span> From Rs. 1750.00</p>
                 <a class="order-now-btn" href="https://wa.me/9997502801" target="_blank">Order Now</a>
@@ -1262,7 +1294,7 @@
 
           <div class="col-md-12">
             <p style="text-align:center;">
-                <a href="flower-vase.html" class="view-moew-btn">View More</a>
+                <a href="flower-vase.html" class="view-moew-btn">View More  <i class="fa fa-arrow-right"></i></a>
             </p>
           </div>
 
@@ -1274,10 +1306,69 @@
 <!--end urli-->
 
 
+<!--latest trending block-->
+<style>
+    .offer-images{
+    width: 100%;
+    border-radius:4px;
+    height: 270px;
+    margin-bottom: 10px;
+}
+    .offer-images-1 {
+        width:100%;
+        border-radius:10px;
+        height:550px;
+    }
+    .offer-aaas .col-md-6 , .offer-aaas .col-md-12{
+        padding:0;
+    }
+    .offer-aaas {
+        padding-bottom: 25px;
+        padding-top:25px;
+    }
+</style>
+
+
+<section class="offer-aaas">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3">
+                
+<video src="video/20231225_2323281.mp4" autoplay="true" style="width: 100%;height: 550px;"></video>
+            </div>
+
+            <div class="col-md-3">
+                
+                <video src="video/20231225_2323281.mp4" autoplay="true" style="width: 100%;height: 550px;"></video>
+                            </div>
+
+            <div class="col-md-3">
+                <div class="col-md-12">
+<img src="img/poster.jpg" alt="" class="offer-images">
+                </div>
+                <div class="col-md-12">
+                    <img src="img/poster.jpg" alt="" class="offer-images">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="col-md-12">
+                    <img src="img/poster.jpg" alt="" class="offer-images">
+
+                </div>
+                <div class="col-md-12">
+                    <img src="img/poster.jpg" alt="" class="offer-images">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
 
 <!--leaf home decore-->
 <section>
-    <div class="container" style="padding-top:25px;padding-bottom:40px;">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-md-12">
                 <h2 class="heading-main-product">Modern Home Decore Item</h2>
@@ -1286,7 +1377,8 @@
 
             <div class="col-md-3 col-6">
                 <div class="card-product">
-                <img src="products/wings/leaf-design-hd-2999.jpg" alt="" class="src">
+                    <div class="image-products">
+                <img src="products/wings/leaf-design-hd-2999.jpg" alt="" class="src"></div>
                 <p class="heading-name">Leaf Design Home Decore</h4>
                 <p class="product-rates"><span>2999.00</span> From Rs. 2100.00</p>
                 <a class="order-now-btn" href="https://wa.me/9997502801" target="_blank">Order Now</a>
@@ -1295,7 +1387,8 @@
 
             <div class="col-md-3 col-6">
                 <div class="card-product">
-                <img src="products/wings/leaf-design-home-decore-al-2799.jpg" alt="" class="src">
+                    <div class="image-products">
+                <img src="products/wings/leaf-design-home-decore-al-2799.jpg" alt="" class="src"></div>
                 <p class="heading-name">Leaf Design Home Decore Aluminium</h4>
                 <p class="product-rates"><span>2799.00</span> From Rs. 1960.00</p>
                 <a class="order-now-btn" href="https://wa.me/9997502801" target="_blank">Order Now</a>
@@ -1304,7 +1397,9 @@
 
             <div class="col-md-3 col-6">
                 <div class="card-product">
-                <img src="products/wings/leaf-design-home-decore-aliminium-2899.jpg" alt="" class="src">
+                    <div class="image-products">
+                <img src="products/wings/leaf-design-home-decore-aliminium-2899.jpg" alt="" class="src"></div>
+
                 <p class="heading-name">Leaf Design Home Decore</h4>
                 <p class="product-rates"><span>2899.00</span> From Rs. 2029.00</p>
                 <a class="order-now-btn" href="https://wa.me/9997502801" target="_blank">Order Now</a>
@@ -1312,8 +1407,9 @@
             </div>
 
             <div class="col-md-3 col-6">
-                <div class="card-product">
-                <img src="products/wings/leaf-design-home-decore-aluminium-2699.jpg" alt="" class="src">
+                <div class="card-product"> <div class="image-products">
+                <img src="products/wings/leaf-design-home-decore-aluminium-2699.jpg" alt="" class="src"></div>
+                
                 <p class="heading-name">Leaf Design Home Decore</h4>
                 <p class="product-rates"><span>2699.00</span> From Rs. 1890.00</p>
                 <a class="order-now-btn" href="https://wa.me/9997502801" target="_blank">Order Now</a>
@@ -1322,8 +1418,8 @@
 
 
             <div class="col-md-3 col-6">
-                <div class="card-product">
-                <img src="products/wings/leaf-design=hd-1699.jpg" alt="" class="src">
+                <div class="card-product"><div class="image-products">
+                <img src="products/wings/leaf-design=hd-1699.jpg" alt="" class="src"></div>
                 <p class="heading-name">Leaf Design Home Decore</h4>
                 <p class="product-rates"><span>1699.00</span> From Rs. 1190.00</p>
                 <a class="order-now-btn" href="https://wa.me/9997502801" target="_blank">Order Now</a>
@@ -1332,7 +1428,8 @@
 
             <div class="col-md-3 col-6">
                 <div class="card-product">
-                <img src="products/wings/modern-design-platter-aluminium-2299.jpg" alt="" class="src">
+                    <div class="image-products">
+                <img src="products/wings/modern-design-platter-aluminium-2299.jpg" alt="" class="src"></div>
                 <p class="heading-name">Modern Design Platter</h4>
                 <p class="product-rates"><span> 2299.00</span> From Rs. 1610.00</p>
                 <a class="order-now-btn" href="https://wa.me/9997502801" target="_blank">Order Now</a>
@@ -1341,7 +1438,8 @@
 
             <div class="col-md-3 col-6">
                 <div class="card-product">
-                <img src="products/wings/modern-style-leaf-hd-al-2799.jpg" alt="" class="src">
+                    <div class="image-products">
+                <img src="products/wings/modern-style-leaf-hd-al-2799.jpg" alt="" class="src"></div>
                 <p class="heading-name">Modern Style Leaf Home Decore</h4>
                 <p class="product-rates"><span> 2799.00</span> From Rs. 1960.00</p>
                 <a class="order-now-btn" href="https://wa.me/9997502801" target="_blank">Order Now</a>
@@ -1349,8 +1447,8 @@
             </div>
 
             <div class="col-md-3 col-6">
-                <div class="card-product">
-                <img src="products/wings/wing-shaped-hd-3299.jpg" alt="" class="src">
+                <div class="card-product"><div class="image-products">
+                <img src="products/wings/wing-shaped-hd-3299.jpg" alt="" class="src"></div>
                 <p class="heading-name">Wing Shaped Home Decore</h4>
                 <p class="product-rates"><span>3299.00</span> From Rs. 2300.00</p>
                 <a class="order-now-btn" href="https://wa.me/9997502801" target="_blank">Order Now</a>
@@ -1360,7 +1458,7 @@
 
           <div class="col-md-12">
             <p style="text-align:center;">
-                <a href="leaf-product.html" class="view-moew-btn">View More</a>
+                <a href="leaf-product.html" class="view-moew-btn">View More  <i class="fa fa-arrow-right"></i></a>
             </p>
           </div>
 
@@ -1369,161 +1467,10 @@
     </div>
 
 </section>
-<!--Flower pot blog end-->
 
-
-      <div id="shopify-section-68550c93-1b08-4a41-86cf-2eb542fa7add" class="shopify-section">
-  
-  <div>
-      <div data-section-id="68550c93-1b08-4a41-86cf-2eb542fa7add" data-section-type="home-builder" data-postload="home_builder"
-  >
-          
-  <div class="home-builder overflow-hidden"><div class="row align-items-start justify-content-center">
-  <div class="home-builder-block-id-68550c93-1b08-4a41-86cf-2eb542fa7add-1 col-12 col-md-12 "><div class="slider position-relative"><div class="slider__prev d-none d-lg-block position-absolute cursor-pointer" data-js-slider-prev><i>
-  
-  
-  <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-theme-006" viewBox="0 0 24 24">
-  <g>
-      <path d="M16.736,3.417c0,0.169-0.059,0.319-0.176,0.449l-8.32,8.301l8.32,8.301c0.117,0.13,0.176,0.28,0.176,0.449
-          s-0.059,0.319-0.176,0.449c-0.065,0.052-0.137,0.094-0.215,0.127c-0.078,0.032-0.156,0.049-0.234,0.049s-0.156-0.017-0.234-0.049
-          c-0.078-0.033-0.149-0.075-0.215-0.127l-8.75-8.75c-0.117-0.13-0.176-0.28-0.176-0.449c0-0.169,0.059-0.319,0.176-0.449l8.75-8.75
-          c0.13-0.117,0.28-0.176,0.449-0.176c0.169,0,0.319,0.059,0.449,0.176C16.677,3.098,16.736,3.248,16.736,3.417z"/>
-  </g>
-  </svg>
-  </i></div><div class="slider__slick"
-           data-js-slider-slick
-           data-arrows="true"
-           data-bullets="true"
-           data-speed="4">
-              <div class="slider__slide home-builder-block-id-68550c93-1b08-4a41-86cf-2eb542fa7add-1-1"
-                  >
-                  <!-- snippets/promobox.liquid -->
-  
-  
-  
-  <div class="promobox promobox--clean position-relative">
-          <a class="d-block">
-              
-  <div class="image-animation "><div class="rimage d-none d-sm-block"
-       style="padding-top:38.14999999999999%; min-height: 0px;"><img class="rimage__img rimage__img--cover lazyload" loading="eager"
-             
-               data-aspect-ratio="2.6212319790301444"
-               
-                  data-aspect-ratio-original="2.6212319790301444"
-               
-               
-                  data-stretch-size="cover"
-               
-           
-           
-               src="img/slidet-1.jpg" data-srcset="img/slidet-1.jpg"
-           
-           
-           
-           
-           
-           alt=""></div>
-  <div class="rimage d-sm-none"
-       style="padding-top:50.77725118483411%; min-height: 0px;"><img class="rimage__img rimage__img--cover lazyload" loading="eager"
-            
-               data-aspect-ratio="0.9825378346915018"
-               
-                  data-aspect-ratio-original="0.9825378346915018"
-               
-               
-                  data-stretch-size="cover"
-               
-           
-           
-               src="img/slider-3.png" data-srcset="img/slider-3.png"
-           
-           
-           
-           
-           
-           alt=""></div>
-  </div>
-  </a>
-      </div>
-              </div>
-              <div class="slider__slide home-builder-block-id-68550c93-1b08-4a41-86cf-2eb542fa7add-1-2"
-                  >
-                  <!-- snippets/promobox.liquid -->
-  
-  
-  
-  <div class="promobox promobox--clean position-relative">
-          <a class="d-block">
-              
-  <div class="image-animation "><div class="rimage d-none d-sm-block"
-       style="padding-top:38.19444444444445%; min-height: 0px;"><img class="rimage__img rimage__img--cover lazyload" loading="eager"
-          
-               data-aspect-ratio="2.618181818181818"
-               
-                  data-aspect-ratio-original="2.618181818181818"
-               
-               
-                  data-stretch-size="cover"
-               
-           
-           
-               src="img/offer-2.jpg" data-srcset="img/offer-2.jpg"
-           
-           
-           
-           
-           
-           alt=""></div>
-  <div class="rimage d-sm-none"
-       style="padding-top:50.85185185185186%; min-height: 0px;"><img class="rimage__img rimage__img--cover lazyload" loading="eager"
-           
-               data-aspect-ratio="0.9818181818181818"
-               
-                  data-aspect-ratio-original="0.9818181818181818"
-               
-               
-                  data-stretch-size="cover"
-               
-           
-           
-               src="img/offer-2.jpg" data-srcset="img/offer-2.jpg"
-           
-           
-           
-           
-           
-           alt=""></div>
-  </div>
-  </a>
-      </div>
-              </div></div><div class="slider__next d-none d-lg-block position-absolute cursor-pointer" data-js-slider-next><i>
-  
-  
-  <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-theme-007" viewBox="0 0 24 24">
-  <g>
-      <path d="M6.708,20.917c0-0.169,0.059-0.319,0.176-0.449l8.32-8.301l-8.32-8.301c-0.117-0.13-0.176-0.28-0.176-0.449
-          c0-0.169,0.059-0.319,0.176-0.449c0.13-0.117,0.279-0.176,0.449-0.176c0.169,0,0.318,0.059,0.449,0.176l8.75,8.75
-          c0.117,0.13,0.176,0.28,0.176,0.449c0,0.169-0.059,0.319-0.176,0.449l-8.75,8.75c-0.065,0.052-0.137,0.094-0.215,0.127
-          c-0.078,0.032-0.156,0.049-0.234,0.049s-0.156-0.017-0.234-0.049c-0.078-0.033-0.15-0.075-0.215-0.127
-          C6.767,21.236,6.708,21.086,6.708,20.917z"/>
-  </g>
-  </svg>
-  </i></div></div>
-  </div>
-  
-  </div>
-      </div>
-  
-      </div>
-  </div><script>
-          Loader.require({type: "script", name: "home_builder"});
-      </script></div>
-    
-    
-    
 <!--offer latest-->
 <section>
-    <div class="container" style="padding-top:25px;padding-bottom:40px;">
+    <div class="container-fluid" style="padding-top:25px;padding-bottom:40px;">
         <div class="row">
             <div class="col-md-12">
                 <h2 class="heading-main-product">Latest Products</h2>
@@ -1532,7 +1479,8 @@
 
             <div class="col-md-3 col-6">
                 <div class="card-product">
-                <img src="products/modern/fruit-basket-aluminium-2599.jpg" alt="" class="src">
+                    <div class="image-products">
+                <img src="products/modern/fruit-basket-aluminium-2599.jpg" alt="" class="src"></div>
                 <p class="heading-name">Fruit Basket Aluminium</h4>
                 <p class="product-rates"><span>2599.00</span> From Rs. 1820.00</p>
                 <a class="order-now-btn" href="#">Order Now</a>
@@ -1540,8 +1488,8 @@
             </div>
 
             <div class="col-md-3 col-6">
-                <div class="card-product">
-                <img src="products/modern/masala-box-with-9-cavity-2499.jpg" alt="" class="src">
+                <div class="card-product"><div class="image-products">
+                <img src="products/modern/masala-box-with-9-cavity-2499.jpg" alt="" class="src"></div>
                 <p class="heading-name">Spices Box With 9 Cavity</h4>
                 <p class="product-rates"><span>2499.00</span> From Rs. 1750.00</p>
                 <a class="order-now-btn" href="#">Order Now</a>
@@ -1549,8 +1497,8 @@
             </div>
 
             <div class="col-md-3 col-6">
-                <div class="card-product">
-                <img src="products/modern/modern-design-platter-aluminium-2299.jpg" alt="" class="src">
+                <div class="card-product"><div class="image-products"> 
+                <img src="products/modern/modern-design-platter-aluminium-2299.jpg" alt="" class="src"></div>
                 <p class="heading-name">Modern Design Platter Aluminium</h4>
                 <p class="product-rates"><span>2299.00</span> From Rs. 1610.00</p>
                 <a class="order-now-btn" href="#">Order Now</a>
@@ -1558,8 +1506,8 @@
             </div>
 
             <div class="col-md-3 col-6">
-                <div class="card-product">
-                <img src="products/modern/multipurpose-bowl-1500.jpg" alt="" class="src">
+                <div class="card-product"><div class="image-products">
+                <img src="products/modern/multipurpose-bowl-1500.jpg" alt="" class="src"></div>
                 <p class="heading-name">Multi Purpose Bowl</h4>
                 <p class="product-rates"><span>1500.00</span> From Rs. 1050.00</p>
                 <a class="order-now-btn" href="#">Order Now</a>
@@ -1568,8 +1516,8 @@
 
 
             <div class="col-md-3 col-6">
-                <div class="card-product">
-                <img src="products/modern/peacock-platter-1800.jpg" alt="" class="src">
+                <div class="card-product"><div class="image-products">
+                <img src="products/modern/peacock-platter-1800.jpg" alt="" class="src"></div>
                 <p class="heading-name">Peacock Platter</h4>
                 <p class="product-rates"><span>1800.00</span> From Rs. 1260.00</p>
                 <a class="order-now-btn" href="#">Order Now</a>
@@ -1577,8 +1525,8 @@
             </div>
 
             <div class="col-md-3 col-6">
-                <div class="card-product">
-                <img src="products/modern/platters-set-2-2499.jpg" alt="" class="src">
+                <div class="card-product"><div class="image-products">
+                <img src="products/modern/platters-set-2-2499.jpg" alt="" class="src"></div>
                 <p class="heading-name">Platters Set of 2</h4>
                 <p class="product-rates"><span>2499.00</span> From Rs. 1750.00</p>
                 <a class="order-now-btn" href="#">Order Now</a>
@@ -1586,8 +1534,8 @@
             </div>
 
             <div class="col-md-3 col-6">
-                <div class="card-product">
-                <img src="products/modern/spice-box-mangowood-1550.jpg" alt="" class="src">
+                <div class="card-product"><div class="image-products">
+                <img src="products/modern/spice-box-mangowood-1550.jpg" alt="" class="src"></div>
                 <p class="heading-name">Spice Box Mangowood</h4>
                 <p class="product-rates"><span>1550.00</span> From Rs. 1085.00</p>
                 <a class="order-now-btn" href="#">Order Now</a>
@@ -1595,8 +1543,8 @@
             </div>
 
             <div class="col-md-3 col-6">
-                <div class="card-product">
-                <img src="products/modern/wire-basket-combi-of-wood-iron-850.jpg" alt="" class="src">
+                <div class="card-product"><div class="image-products">
+                <img src="products/modern/wire-basket-combi-of-wood-iron-850.jpg" alt="" class="src"></div>
                 <p class="heading-name">Wire Basket Combi of Woood & Iron</h4>
                 <p class="product-rates"><span>850.00</span> From Rs. 595.00</p>
                 <a class="order-now-btn" href="#">Order Now</a>
@@ -1606,7 +1554,7 @@
 
           <div class="col-md-12">
             <p style="text-align:center;">
-                <a href="latest-productus.html" class="view-moew-btn">View More</a>
+                <a href="latest-productus.html" class="view-moew-btn">View More   <i class="fa fa-arrow-right"></i></a>
             </p>
           </div>
 
@@ -1620,30 +1568,103 @@
 
 
 
-    
-      
-      
-      <div id="shopify-section-1631524221b01edf9e" class="shopify-section" style="
-      background-image:url(img/bg-kras.jpg);background-size: 100% 100%;background-repeat: no-repeat;">
-  <div style="padding: 70px 0;background-color: #0000008c;
-  ">
-      <div data-section-id="1631524221b01edf9e" data-section-type="home-builder" class="container"
-  >
-          
-  <div class="home-builder overflow-hidden"><div class="row align-items-start justify-content-center">
-  <div class="home-builder-block-id-1631524221b01edf9e-1 col-12 col-md-12 "><div class="rte">
-                                  <h5 style="text-align: center;font-size:14px;color: #fff;font-family: cursive;">For Any Type of Customization,</h5>
-  <h5 style="text-align: center;font-size: 14px;color: #fff;font-family: cursive;">Please Get in Touch With Us on kraftindia@gmail.com</h5>
-  <h5 style="text-align: center;font-size: 14px;color: #fff;font-family: cursive;">or Call/WhatsApp us at 6399971772</h5>
-  
-  
-                              </div></div></div>
-      </div>
-  
-      </div>
-  </div></div>
-  
-  
+<!--offer latest-->
+<style>
+    .feal-of-the-day{
+ width: 100%;
+    border-radius:10px;
+    }
+</style>
+
+
+<section>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="heading-main-product">Deal Of the Day</h2>
+            </div>
+            
+            <div class="col-md-12">
+                <img src="img/deal-of-the-day.jpeg" class="feal-of-the-day">
+            </div>
+       
+        </div>
+    </div>
+
+</section>
+
+
+<style>
+    .about-usfront p strong{
+    font-size: 18px;
+    font-family: inherit;
+    color: #00415d;
+}
+.about-usfront p{
+    font-size: 16px;
+    text-align: justify;
+    line-height: 28px;
+    color: #7c7c7c;
+}
+.about-usfront {
+    background-color: #f7f7f7;
+    padding-bottom: 40px;
+    padding-top: 50px;
+}
+    </style>
+<section class="about-usfront">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+               <p><strong>About us :</strong></p>
+               <p>
+                Welcome to Kraft India, your ultimate destination for an extraordinary range of metal and wooden masterpieces. We specialize in crafting a diverse array of items, including urli, tea lights, planters, vases, watches, trays, and more. At Kraft India, we are driven by a singular mission: to deliver the highest quality products to our valued customers.
+            </p>
+            <p>
+Our dedication to quality is at the heart of everything we do. With a keen eye for detail and a commitment to craftsmanship, we create timeless pieces that seamlessly blend artistry and functionality. Whether you're seeking elegant home decor, thoughtful gifts, or statement pieces that leave a lasting impression, Kraft India is your trusted partner in design and quality.
+</p>
+<p>
+Join us on a journey where creativity meets excellence, and explore the world of fine metal and wooden creations that elevate spaces and inspire admiration. Experience the Kraft India difference today
+</p>       
+<p><strong>
+Payment Policy</strong></p>
+<p>
+10% on Confirmation of the Order: When a customer places an order with Kraft India, they are required to pay 10% of the total order amount upfront at the time of confirming the order. This payment serves as a commitment from the customer to proceed with the purchase.
+</p>
+<p>
+Rest on Dispatch Time: The remaining 90% of the payment is to be made at the time of dispatch. This means that Kraft India will prepare the order and get it ready for shipment, and once it's ready to be sent to the customer, the customer must pay the outstanding balance before the goods are actually dispatched or delivered to them.
+</p>
+<p>
+Bulk Orders (50% Advance): In the case of bulk orders, which typically involve larger quantities or higher values, Kraft India requires a 50% advance payment. This means that for bulk orders, the customer needs to pay half of the total order amount upfront when confirming the order. The remaining 50% is due at the time of dispatch, similar to standard orders.
+</p>
+<p><strong>
+Cancellations Policy</strong></p>
+<p>
+In case of cancelation, please inform before the dispatch of order.Once it is shipped,it won't be canceled For cancelation, either whatsapp or email to us.
+</p>
+<p><strong>
+Return policy</strong></p>
+<p>
+Make sure when the product is reached to you ,pl.make a proper video while opening the product. If it is damaged or wrong product you ordered only in that case it will be taken back.
+</p>
+<p>
+No return on some specific items like glass marble,tiles will be accepted
+</p>
+<p>
+A little variation in size & colour is acceptable as it is handmade product.Slight variation in colour may occur between the product images displayed on our website and the actual physical product just because of device settings, lighting conditions etc
+</p>
+
+
+</div>
+            
+        </div>
+    </div>
+
+</section>
+
+
+
+
   
   </div>
     
@@ -1785,35 +1806,9 @@
                           </div>
                       </div>
                   </div>
-              </div><div class="d-none d-lg-block">
-                      <div class="footer__border-bottom d-none d-lg-block"></div>
-                      <div class="footer__border d-lg-none"></div>
-                      <div class="footer__tape py-lg-20">
-                          <div class="container">
-                              <div class="footer__social-media d-lg-flex justify-content-lg-center align-items-lg-center"><h5 class="d-none d-lg-block mb-10 mb-lg-0 mr-lg-20 text-uppercase">Follow us</h5><div class="social-media d-flex flex-wrap justify-content-center justify-content-lg-start">
-      
-      
-      
-      
-      
-      
-  <a href="#" target="_blank" class=" mb-6 mx-10 mx-sm-15 mx-lg-0 mr-lg-10"
-              >
-              <i class="fa fa-facebook" style="color: #fff;"></i>
-          </a>
-          <a href="#" target="_blank" class=" mb-6 mx-10 mx-sm-15 mx-lg-0 mr-lg-10"
-              >
-              <i class="fa fa-instagram" style="color: #fff;"></i>
-          </a>
-          <a href="#" target="_blank" class=" mb-6 mx-10 mx-sm-15 mx-lg-0 mr-lg-10"
-              >
-              <i class="fa fa-youtube" style="color: #fff;"></i>
-          </a>
-         </div>
-  </div>
-                          </div>
-                      </div>
-                  </div><div class="footer__border-bottom"></div>
+              </div>
+              
+              <div class="footer__border-bottom"></div>
                   <div class="footer__tape text-center" style="padding: 10px;">
                       <div class="container">
                           <div class="py-40 py-lg-0">
